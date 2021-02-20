@@ -1,9 +1,5 @@
 function load() {
-	$(".text").animate({ opacity: '1' }, "400");
+	$("h1").animate({ opacity: '1' }, "200");
+    $("h3").animate({ opacity: '1' }, "200");
+    $("p").animate({ opacity: '1' }, "200");
 }
-$(document).ready(function() {
-	$('li').click(function(){
-		$(".text").animate({opacity: '0'}, "200");
-		$(".text").animate({opacity: '1'}, "200");
-	});
-});
