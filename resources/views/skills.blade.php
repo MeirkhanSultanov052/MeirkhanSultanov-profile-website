@@ -59,6 +59,10 @@
                 <img id="arrup" src="https://www.pngkit.com/png/full/402-4029966_compre-com-segurana-white-arrow-black-background.png" alt="">
             </a>
         </div>
+        <div id = "divimg1">
+        <p id = "pimg1">Powered by</p>
+        <img id = "img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Logo_of_Suleymen_Demirel_University%2C_Kazakhstan.png/250px-Logo_of_Suleymen_Demirel_University%2C_Kazakhstan.png">
+    </div>
     </div>
     <script src="{{ asset('page2.js') }}"></script>
 </body>
