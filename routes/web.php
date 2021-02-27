@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
-
+use App\Models\Post;
 use App\Models\Client;
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ Route::get('client/add', function() {
 
 Route::get('client', function() {
     $client = CLient::find(1);
-    return $client->name;
+    return $client;
 });
 
 Route::get('post/create', function(){
