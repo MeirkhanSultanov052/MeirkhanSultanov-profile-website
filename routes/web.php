@@ -39,3 +39,15 @@ Route::get('client', function() {
     $client = CLient::find(1);
     return $client->name;
 });
+
+Route::get('post/create', function(){
+    DB::table('post')->insert([
+        'title' => 'Camry 3.5',
+        'body' => 'Camry 3.5, Camry 3.5, Lubvi dostoina tolko mat and Camry 3.5'
+    ]);
+});
+
+Route::get('post', function() {
+    $post = Post::find(1);
+    return $post;
+});
