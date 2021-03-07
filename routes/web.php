@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
 use App\Models\Client;
+
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,3 +53,5 @@ Route::get('post', function() {
     $post = Post::find(1);
     return $post;
 });
+
+Route::get('post', [BlogController::class, 'index']);
